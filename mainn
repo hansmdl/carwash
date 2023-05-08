@@ -1,0 +1,1062 @@
+// Generated code for this HomePage Widget...
+Scaffold(
+  key: scaffoldKey,
+  backgroundColor: Colors.white,
+  drawer: Container(
+    width: MediaQuery.of(context).size.width * 0.7,
+    child: Drawer(
+      elevation: 25,
+      child: Padding(
+        padding: EdgeInsetsDirectional.fromSTEB(15, 20, 15, 15),
+        child: Column(
+          mainAxisSize: MainAxisSize.max,
+          mainAxisAlignment: MainAxisAlignment.start,
+          children: [
+            Row(
+              mainAxisSize: MainAxisSize.max,
+              mainAxisAlignment: MainAxisAlignment.center,
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Container(
+                  width: 70,
+                  height: 70,
+                  clipBehavior: Clip.antiAlias,
+                  decoration: BoxDecoration(
+                    shape: BoxShape.circle,
+                  ),
+                  child: Image.network(
+                    'https://thumbs.dreamstime.com/b/barbershop-salon-barber-hairdresser-man-mature-good-looking-model-copy-space-hair-styling-reference-beauty-grizzle-deal-208541615.jpg',
+                    fit: BoxFit.cover,
+                  ),
+                ),
+              ],
+            ),
+            Padding(
+              padding: EdgeInsetsDirectional.fromSTEB(0, 15, 0, 0),
+              child: Row(
+                mainAxisSize: MainAxisSize.max,
+                mainAxisAlignment: MainAxisAlignment.center,
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Expanded(
+                    child: Text(
+                      'Andrea Davis',
+                      textAlign: TextAlign.center,
+                      style: FlutterFlowTheme.of(context).bodyMedium.override(
+                            fontFamily: 'Open Sans',
+                            fontSize: 16,
+                          ),
+                    ),
+                  ),
+                ],
+              ),
+            ),
+          ],
+        ),
+      ),
+    ),
+  ),
+  body: NestedScrollView(
+    headerSliverBuilder: (context, _) => [
+      SliverAppBar(
+        pinned: false,
+        floating: true,
+        snap: true,
+        backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
+        automaticallyImplyLeading: false,
+        leading: InkWell(
+          splashColor: Colors.transparent,
+          focusColor: Colors.transparent,
+          hoverColor: Colors.transparent,
+          highlightColor: Colors.transparent,
+          onTap: () async {
+            scaffoldKey.currentState!.openDrawer();
+          },
+          child: Icon(
+            FFIcons.kmenu2,
+            color: FlutterFlowTheme.of(context).lineColor,
+            size: 30,
+          ),
+        ).animateOnPageLoad(animationsMap['iconOnPageLoadAnimation']!),
+        actions: [
+          Padding(
+            padding: EdgeInsetsDirectional.fromSTEB(0, 0, 12, 0),
+            child: Row(
+              mainAxisSize: MainAxisSize.max,
+              children: [
+                if (Theme.of(context).brightness == Brightness.light)
+                  Padding(
+                    padding: EdgeInsetsDirectional.fromSTEB(0, 0, 20, 0),
+                    child: InkWell(
+                      splashColor: Colors.transparent,
+                      focusColor: Colors.transparent,
+                      hoverColor: Colors.transparent,
+                      highlightColor: Colors.transparent,
+                      onTap: () async {
+                        setDarkModeSetting(context, ThemeMode.dark);
+                      },
+                      child: FaIcon(
+                        FontAwesomeIcons.moon,
+                        color: FlutterFlowTheme.of(context).lineColor,
+                        size: 22,
+                      ),
+                    ),
+                  ),
+                if (Theme.of(context).brightness == Brightness.dark)
+                  Padding(
+                    padding: EdgeInsetsDirectional.fromSTEB(0, 0, 20, 0),
+                    child: InkWell(
+                      splashColor: Colors.transparent,
+                      focusColor: Colors.transparent,
+                      hoverColor: Colors.transparent,
+                      highlightColor: Colors.transparent,
+                      onTap: () async {
+                        setDarkModeSetting(context, ThemeMode.light);
+                      },
+                      child: FaIcon(
+                        FontAwesomeIcons.solidMoon,
+                        color: FlutterFlowTheme.of(context).lineColor,
+                        size: 22,
+                      ),
+                    ),
+                  ),
+                InkWell(
+                  splashColor: Colors.transparent,
+                  focusColor: Colors.transparent,
+                  hoverColor: Colors.transparent,
+                  highlightColor: Colors.transparent,
+                  onTap: () async {
+                    context.pushNamed('PROFILE');
+                  },
+                  child: Container(
+                    width: 40,
+                    height: 40,
+                    clipBehavior: Clip.antiAlias,
+                    decoration: BoxDecoration(
+                      shape: BoxShape.circle,
+                    ),
+                    child: Image.network(
+                      'https://thumbs.dreamstime.com/b/barbershop-salon-barber-hairdresser-man-mature-good-looking-model-copy-space-hair-styling-reference-beauty-grizzle-deal-208541615.jpg',
+                      fit: BoxFit.cover,
+                    ),
+                  ),
+                ),
+              ],
+            ).animateOnPageLoad(animationsMap['rowOnPageLoadAnimation4']!),
+          ),
+        ],
+        centerTitle: false,
+        elevation: 0,
+      )
+    ],
+    body: Builder(
+      builder: (context) {
+        return SafeArea(
+          child: Padding(
+            padding: EdgeInsetsDirectional.fromSTEB(10, 0, 0, 15),
+            child: SingleChildScrollView(
+              child: Column(
+                mainAxisSize: MainAxisSize.max,
+                children: [
+                  Padding(
+                    padding: EdgeInsetsDirectional.fromSTEB(0, 0, 10, 0),
+                    child: Column(
+                      mainAxisSize: MainAxisSize.max,
+                      children: [
+                        Padding(
+                          padding:
+                              EdgeInsetsDirectional.fromSTEB(0, 15, 0, 0),
+                          child: Row(
+                            mainAxisSize: MainAxisSize.max,
+                            children: [
+                              Expanded(
+                                child: Text(
+                                  'Brands',
+                                  style: FlutterFlowTheme.of(context)
+                                      .bodyMedium
+                                      .override(
+                                        fontFamily: 'Open Sans',
+                                        fontSize: 23,
+                                        fontWeight: FontWeight.bold,
+                                      ),
+                                ).animateOnPageLoad(animationsMap[
+                                    'textOnPageLoadAnimation1']!),
+                              ),
+                              Padding(
+                                padding: EdgeInsetsDirectional.fromSTEB(
+                                    10, 0, 10, 0),
+                                child: InkWell(
+                                  splashColor: Colors.transparent,
+                                  focusColor: Colors.transparent,
+                                  hoverColor: Colors.transparent,
+                                  highlightColor: Colors.transparent,
+                                  onTap: () async {
+                                    if (FFAppState().searchonof) {
+                                      FFAppState().update(() {
+                                        FFAppState().searchonof = false;
+                                      });
+                                    } else {
+                                      FFAppState().update(() {
+                                        FFAppState().searchonof = true;
+                                      });
+                                    }
+                                  },
+                                  child: Row(
+                                    mainAxisSize: MainAxisSize.max,
+                                    children: [
+                                      FaIcon(
+                                        FontAwesomeIcons.search,
+                                        color: Color(0xFFC2C2C2),
+                                        size: 20,
+                                      ),
+                                    ],
+                                  ),
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                        Padding(
+                          padding:
+                              EdgeInsetsDirectional.fromSTEB(10, 15, 10, 0),
+                          child: Row(
+                            mainAxisSize: MainAxisSize.max,
+                            children: [
+                              Expanded(
+                                child: TextFormField(
+                                  controller: _model.searchController,
+                                  obscureText: false,
+                                  decoration: InputDecoration(
+                                    hintText: 'Search',
+                                    hintStyle: FlutterFlowTheme.of(context)
+                                        .bodySmall,
+                                    enabledBorder: UnderlineInputBorder(
+                                      borderSide: BorderSide(
+                                        color: Color(0x00000000),
+                                        width: 1,
+                                      ),
+                                      borderRadius:
+                                          BorderRadius.circular(100),
+                                    ),
+                                    focusedBorder: UnderlineInputBorder(
+                                      borderSide: BorderSide(
+                                        color: Color(0x00000000),
+                                        width: 1,
+                                      ),
+                                      borderRadius:
+                                          BorderRadius.circular(100),
+                                    ),
+                                    errorBorder: UnderlineInputBorder(
+                                      borderSide: BorderSide(
+                                        color: Color(0x00000000),
+                                        width: 1,
+                                      ),
+                                      borderRadius:
+                                          BorderRadius.circular(100),
+                                    ),
+                                    focusedErrorBorder: UnderlineInputBorder(
+                                      borderSide: BorderSide(
+                                        color: Color(0x00000000),
+                                        width: 1,
+                                      ),
+                                      borderRadius:
+                                          BorderRadius.circular(100),
+                                    ),
+                                    filled: true,
+                                    fillColor: FlutterFlowTheme.of(context)
+                                        .searchColor,
+                                    prefixIcon: Icon(
+                                      Icons.search_sharp,
+                                      color: FlutterFlowTheme.of(context)
+                                          .secondary,
+                                    ),
+                                  ),
+                                  style:
+                                      FlutterFlowTheme.of(context).bodyMedium,
+                                  validator: _model.searchControllerValidator
+                                      .asValidator(context),
+                                ),
+                              ),
+                            ],
+                          ).animateOnPageLoad(
+                              animationsMap['rowOnPageLoadAnimation1']!),
+                        ),
+                        Padding(
+                          padding:
+                              EdgeInsetsDirectional.fromSTEB(10, 5, 0, 0),
+                          child: Row(
+                            mainAxisSize: MainAxisSize.max,
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: [
+                              Expanded(
+                                child: Padding(
+                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                      0, 5, 0, 5),
+                                  child: FlutterFlowChoiceChips(
+                                    options: [
+                                      ChipData('Nike'),
+                                      ChipData('Adidas'),
+                                      ChipData('Converense'),
+                                      ChipData('Vans')
+                                    ],
+                                    onChanged: (val) => setState(() =>
+                                        _model.choiceChipsValue = val?.first),
+                                    selectedChipStyle: ChipStyle(
+                                      backgroundColor:
+                                          FlutterFlowTheme.of(context)
+                                              .secondary,
+                                      textStyle: FlutterFlowTheme.of(context)
+                                          .bodyMedium
+                                          .override(
+                                            fontFamily: 'Open Sans',
+                                            color: Colors.white,
+                                          ),
+                                      iconColor: FlutterFlowTheme.of(context)
+                                          .primary,
+                                      iconSize: 20,
+                                      elevation: 5,
+                                    ),
+                                    unselectedChipStyle: ChipStyle(
+                                      backgroundColor: Colors.white,
+                                      textStyle: FlutterFlowTheme.of(context)
+                                          .bodySmall
+                                          .override(
+                                            fontFamily: 'Open Sans',
+                                            color: Color(0xFF323B45),
+                                          ),
+                                      iconColor: Colors.black,
+                                      iconSize: 18,
+                                      elevation: 0,
+                                    ),
+                                    chipSpacing: 10,
+                                    multiselect: false,
+                                    initialized:
+                                        _model.choiceChipsValue != null,
+                                    alignment: WrapAlignment.start,
+                                    controller:
+                                        _model.choiceChipsValueController ??=
+                                            FormFieldController<List<String>>(
+                                      ['Nike'],
+                                    ),
+                                  ).animateOnPageLoad(animationsMap[
+                                      'choiceChipsOnPageLoadAnimation']!),
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                  Padding(
+                    padding: EdgeInsetsDirectional.fromSTEB(0, 20, 0, 0),
+                    child: FutureBuilder<List<ProductRecord>>(
+                      future: queryProductRecordOnce(
+                        queryBuilder: (productRecord) => productRecord.where(
+                            'brand_name',
+                            isEqualTo: _model.choiceChipsValue),
+                      ),
+                      builder: (context, snapshot) {
+                        // Customize what your widget looks like when it's loading.
+                        if (!snapshot.hasData) {
+                          return Center(
+                            child: SizedBox(
+                              width: 35,
+                              height: 35,
+                              child: SpinKitSquareCircle(
+                                color: FlutterFlowTheme.of(context).lineColor,
+                                size: 35,
+                              ),
+                            ),
+                          );
+                        }
+                        List<ProductRecord> productProductRecordList =
+                            snapshot.data!;
+                        return SingleChildScrollView(
+                          scrollDirection: Axis.horizontal,
+                          child: Row(
+                            mainAxisSize: MainAxisSize.max,
+                            children:
+                                List.generate(productProductRecordList.length,
+                                    (productIndex) {
+                              final productProductRecord =
+                                  productProductRecordList[productIndex];
+                              return Padding(
+                                padding: EdgeInsetsDirectional.fromSTEB(
+                                    8, 0, 0, 0),
+                                child: InkWell(
+                                  splashColor: Colors.transparent,
+                                  focusColor: Colors.transparent,
+                                  hoverColor: Colors.transparent,
+                                  highlightColor: Colors.transparent,
+                                  onTap: () async {
+                                    context.pushNamed(
+                                      'ITEM_INFO',
+                                      queryParameters: {
+                                        'productref': serializeParam(
+                                          productProductRecord.reference,
+                                          ParamType.DocumentReference,
+                                        ),
+                                      }.withoutNulls,
+                                    );
+                                  },
+                                  child: Material(
+                                    color: Colors.transparent,
+                                    elevation: 0,
+                                    shape: RoundedRectangleBorder(
+                                      borderRadius: BorderRadius.only(
+                                        bottomLeft: Radius.circular(0),
+                                        bottomRight: Radius.circular(30),
+                                        topLeft: Radius.circular(30),
+                                        topRight: Radius.circular(0),
+                                      ),
+                                    ),
+                                    child: Container(
+                                      width: 200,
+                                      height: 300,
+                                      decoration: BoxDecoration(
+                                        gradient: LinearGradient(
+                                          colors: [
+                                            Color(0xFFF59292),
+                                            FlutterFlowTheme.of(context)
+                                                .secondary
+                                          ],
+                                          stops: [0, 1],
+                                          begin:
+                                              AlignmentDirectional(0.34, -1),
+                                          end: AlignmentDirectional(-0.34, 1),
+                                        ),
+                                        borderRadius: BorderRadius.only(
+                                          bottomLeft: Radius.circular(0),
+                                          bottomRight: Radius.circular(30),
+                                          topLeft: Radius.circular(30),
+                                          topRight: Radius.circular(0),
+                                        ),
+                                      ),
+                                      child: Padding(
+                                        padding:
+                                            EdgeInsetsDirectional.fromSTEB(
+                                                5, 0, 5, 5),
+                                        child: Column(
+                                          mainAxisSize: MainAxisSize.max,
+                                          mainAxisAlignment:
+                                              MainAxisAlignment.center,
+                                          children: [
+                                            InkWell(
+                                              splashColor: Colors.transparent,
+                                              focusColor: Colors.transparent,
+                                              hoverColor: Colors.transparent,
+                                              highlightColor:
+                                                  Colors.transparent,
+                                              onTap: () async {
+                                                FFAppState().update(() {
+                                                  FFAppState().addToFavorite(
+                                                      productProductRecord
+                                                          .reference);
+                                                });
+                                              },
+                                              child: Row(
+                                                mainAxisSize:
+                                                    MainAxisSize.max,
+                                                mainAxisAlignment:
+                                                    MainAxisAlignment.end,
+                                                children: [
+                                                  ToggleIcon(
+                                                    onPressed: () async {
+                                                      setState(
+                                                        () => FFAppState()
+                                                                .favorite
+                                                                .contains(
+                                                                    productProductRecord
+                                                                        .reference)
+                                                            ? FFAppState()
+                                                                .removeFromFavorite(
+                                                                    productProductRecord
+                                                                        .reference)
+                                                            : FFAppState()
+                                                                .addToFavorite(
+                                                                    productProductRecord
+                                                                        .reference),
+                                                      );
+                                                    },
+                                                    value: FFAppState()
+                                                        .favorite
+                                                        .contains(
+                                                            productProductRecord
+                                                                .reference),
+                                                    onIcon: Icon(
+                                                      Icons.favorite,
+                                                      color: Colors.white,
+                                                      size: 27,
+                                                    ),
+                                                    offIcon: Icon(
+                                                      Icons.favorite_border,
+                                                      color: Colors.white,
+                                                      size: 27,
+                                                    ),
+                                                  ).animateOnActionTrigger(
+                                                    animationsMap[
+                                                        'toggleIconOnActionTriggerAnimation']!,
+                                                  ),
+                                                ],
+                                              ),
+                                            ),
+                                            Padding(
+                                              padding: EdgeInsetsDirectional
+                                                  .fromSTEB(0, 14, 0, 0),
+                                              child: Row(
+                                                mainAxisSize:
+                                                    MainAxisSize.max,
+                                                children: [
+                                                  Expanded(
+                                                    child: Image.network(
+                                                      productProductRecord
+                                                          .image!,
+                                                      width: 100,
+                                                      height: 135,
+                                                      fit: BoxFit.cover,
+                                                    ),
+                                                  ),
+                                                ],
+                                              ),
+                                            ),
+                                            Padding(
+                                              padding: EdgeInsetsDirectional
+                                                  .fromSTEB(0, 5, 0, 0),
+                                              child: Row(
+                                                mainAxisSize:
+                                                    MainAxisSize.max,
+                                                children: [
+                                                  Expanded(
+                                                    child: Padding(
+                                                      padding:
+                                                          EdgeInsetsDirectional
+                                                              .fromSTEB(
+                                                                  5, 0, 5, 0),
+                                                      child: Text(
+                                                        productProductRecord
+                                                            .name!
+                                                            .maybeHandleOverflow(
+                                                                maxChars: 20),
+                                                        style: FlutterFlowTheme
+                                                                .of(context)
+                                                            .bodyMedium
+                                                            .override(
+                                                              fontFamily:
+                                                                  'Open Sans',
+                                                              color: Colors
+                                                                  .white,
+                                                              fontSize: 14,
+                                                            ),
+                                                      ),
+                                                    ),
+                                                  ),
+                                                ],
+                                              ),
+                                            ),
+                                            Padding(
+                                              padding: EdgeInsetsDirectional
+                                                  .fromSTEB(5, 5, 0, 0),
+                                              child: Row(
+                                                mainAxisSize:
+                                                    MainAxisSize.max,
+                                                children: [
+                                                  Text(
+                                                    '\$ ${productProductRecord.price?.toString()}',
+                                                    style: FlutterFlowTheme
+                                                            .of(context)
+                                                        .bodyMedium
+                                                        .override(
+                                                          fontFamily:
+                                                              'Open Sans',
+                                                          color: Colors.white,
+                                                          fontSize: 16,
+                                                        ),
+                                                  ),
+                                                ],
+                                              ),
+                                            ),
+                                            Padding(
+                                              padding: EdgeInsetsDirectional
+                                                  .fromSTEB(5, 15, 0, 0),
+                                              child: Row(
+                                                mainAxisSize:
+                                                    MainAxisSize.max,
+                                                children: [
+                                                  if (!FFAppState()
+                                                      .cart
+                                                      .contains(
+                                                          productProductRecord
+                                                              .reference))
+                                                    InkWell(
+                                                      splashColor:
+                                                          Colors.transparent,
+                                                      focusColor:
+                                                          Colors.transparent,
+                                                      hoverColor:
+                                                          Colors.transparent,
+                                                      highlightColor:
+                                                          Colors.transparent,
+                                                      onTap: () async {
+                                                        if (productProductRecord
+                                                                .reference ==
+                                                            productProductRecord
+                                                                .reference) {
+                                                          if (animationsMap[
+                                                                  'iconOnActionTriggerAnimation'] !=
+                                                              null) {
+                                                            await animationsMap[
+                                                                    'iconOnActionTriggerAnimation']!
+                                                                .controller
+                                                                .forward(
+                                                                    from:
+                                                                        0.0);
+                                                          }
+                                                          FFAppState()
+                                                              .update(() {
+                                                            FFAppState().addToCart(
+                                                                productProductRecord
+                                                                    .reference);
+                                                          });
+                                                          FFAppState()
+                                                              .update(() {
+                                                            FFAppState()
+                                                                .cartsum = FFAppState()
+                                                                    .cartsum +
+                                                                productProductRecord
+                                                                    .price!;
+                                                          });
+                                                          ScaffoldMessenger
+                                                                  .of(context)
+                                                              .showSnackBar(
+                                                            SnackBar(
+                                                              content: Text(
+                                                                'Added to cart',
+                                                                style: FlutterFlowTheme.of(
+                                                                        context)
+                                                                    .titleMedium
+                                                                    .override(
+                                                                      fontFamily:
+                                                                          'Open Sans',
+                                                                      color: Colors
+                                                                          .white,
+                                                                    ),
+                                                              ),
+                                                              duration: Duration(
+                                                                  milliseconds:
+                                                                      4050),
+                                                              backgroundColor:
+                                                                  FlutterFlowTheme.of(
+                                                                          context)
+                                                                      .secondary,
+                                                              action:
+                                                                  SnackBarAction(
+                                                                label:
+                                                                    'Go to Cart',
+                                                                textColor: Color(
+                                                                    0xFFE8E8E8),
+                                                                onPressed:
+                                                                    () async {
+                                                                  context
+                                                                      .pushNamed(
+                                                                    'CARD',
+                                                                    extra: <
+                                                                        String,
+                                                                        dynamic>{
+                                                                      kTransitionInfoKey:
+                                                                          TransitionInfo(
+                                                                        hasTransition:
+                                                                            true,
+                                                                        transitionType:
+                                                                            PageTransitionType.bottomToTop,
+                                                                      ),
+                                                                    },
+                                                                  );
+                                                                },
+                                                              ),
+                                                            ),
+                                                          );
+                                                        }
+                                                      },
+                                                      child: Icon(
+                                                        Icons.add_circle,
+                                                        color: Colors.white,
+                                                        size: 35,
+                                                      ),
+                                                    ).animateOnActionTrigger(
+                                                      animationsMap[
+                                                          'iconOnActionTriggerAnimation']!,
+                                                    ),
+                                                  if (FFAppState()
+                                                      .cart
+                                                      .contains(
+                                                          productProductRecord
+                                                              .reference))
+                                                    InkWell(
+                                                      splashColor:
+                                                          Colors.transparent,
+                                                      focusColor:
+                                                          Colors.transparent,
+                                                      hoverColor:
+                                                          Colors.transparent,
+                                                      highlightColor:
+                                                          Colors.transparent,
+                                                      onTap: () async {
+                                                        FFAppState()
+                                                            .update(() {
+                                                          FFAppState().removeFromCart(
+                                                              productProductRecord
+                                                                  .reference);
+                                                          FFAppState()
+                                                              .cartsum = FFAppState()
+                                                                  .cartsum +
+                                                              functions.returncartprice(
+                                                                  productProductRecord
+                                                                      .price!);
+                                                        });
+                                                        ScaffoldMessenger.of(
+                                                                context)
+                                                            .showSnackBar(
+                                                          SnackBar(
+                                                            content: Text(
+                                                              'Delited in cart',
+                                                              style: FlutterFlowTheme.of(
+                                                                      context)
+                                                                  .titleMedium
+                                                                  .override(
+                                                                    fontFamily:
+                                                                        'Open Sans',
+                                                                    color: Colors
+                                                                        .white,
+                                                                  ),
+                                                            ),
+                                                            duration: Duration(
+                                                                milliseconds:
+                                                                    4050),
+                                                            backgroundColor:
+                                                                FlutterFlowTheme.of(
+                                                                        context)
+                                                                    .secondary,
+                                                          ),
+                                                        );
+                                                      },
+                                                      child: Icon(
+                                                        FFIcons
+                                                            .kbasketCircled,
+                                                        color: Colors.white,
+                                                        size: 30,
+                                                      ),
+                                                    ),
+                                                ],
+                                              ),
+                                            ),
+                                          ],
+                                        ),
+                                      ),
+                                    ),
+                                  ),
+                                ),
+                              );
+                            }),
+                          ),
+                        ).animateOnPageLoad(
+                            animationsMap['rowOnPageLoadAnimation2']!);
+                      },
+                    ),
+                  ),
+                  Padding(
+                    padding: EdgeInsetsDirectional.fromSTEB(0, 30, 10, 0),
+                    child: Row(
+                      mainAxisSize: MainAxisSize.max,
+                      children: [
+                        Expanded(
+                          child: Text(
+                            'Most Popular',
+                            style: FlutterFlowTheme.of(context)
+                                .bodyMedium
+                                .override(
+                                  fontFamily: 'Open Sans',
+                                  fontSize: 23,
+                                  fontWeight: FontWeight.bold,
+                                ),
+                          ).animateOnPageLoad(
+                              animationsMap['textOnPageLoadAnimation2']!),
+                        ),
+                      ],
+                    ),
+                  ),
+                  Padding(
+                    padding: EdgeInsetsDirectional.fromSTEB(10, 15, 20, 0),
+                    child: FutureBuilder<List<ProductRecord>>(
+                      future: queryProductRecordOnce(
+                        queryBuilder: (productRecord) => productRecord.where(
+                            'brand_name',
+                            isEqualTo: _model.choiceChipsValue),
+                      ),
+                      builder: (context, snapshot) {
+                        // Customize what your widget looks like when it's loading.
+                        if (!snapshot.hasData) {
+                          return Center(
+                            child: SizedBox(
+                              width: 35,
+                              height: 35,
+                              child: SpinKitSquareCircle(
+                                color: FlutterFlowTheme.of(context).lineColor,
+                                size: 35,
+                              ),
+                            ),
+                          );
+                        }
+                        List<ProductRecord> columnProductRecordList =
+                            snapshot.data!;
+                        return SingleChildScrollView(
+                          child: Column(
+                            mainAxisSize: MainAxisSize.max,
+                            children:
+                                List.generate(columnProductRecordList.length,
+                                    (columnIndex) {
+                              final columnProductRecord =
+                                  columnProductRecordList[columnIndex];
+                              return InkWell(
+                                splashColor: Colors.transparent,
+                                focusColor: Colors.transparent,
+                                hoverColor: Colors.transparent,
+                                highlightColor: Colors.transparent,
+                                onTap: () async {
+                                  context.pushNamed(
+                                    'ITEM_INFO',
+                                    queryParameters: {
+                                      'productref': serializeParam(
+                                        columnProductRecord.reference,
+                                        ParamType.DocumentReference,
+                                      ),
+                                    }.withoutNulls,
+                                  );
+                                },
+                                child: Row(
+                                  mainAxisSize: MainAxisSize.max,
+                                  children: [
+                                    Expanded(
+                                      child: Padding(
+                                        padding:
+                                            EdgeInsetsDirectional.fromSTEB(
+                                                0, 10, 0, 0),
+                                        child: Material(
+                                          color: Colors.transparent,
+                                          elevation: 0,
+                                          shape: RoundedRectangleBorder(
+                                            borderRadius: BorderRadius.only(
+                                              bottomLeft: Radius.circular(0),
+                                              bottomRight:
+                                                  Radius.circular(30),
+                                              topLeft: Radius.circular(30),
+                                              topRight: Radius.circular(0),
+                                            ),
+                                          ),
+                                          child: Container(
+                                            width: 100,
+                                            height: 100,
+                                            decoration: BoxDecoration(
+                                              color: Color(0xFF6E61FA),
+                                              borderRadius: BorderRadius.only(
+                                                bottomLeft:
+                                                    Radius.circular(0),
+                                                bottomRight:
+                                                    Radius.circular(30),
+                                                topLeft: Radius.circular(30),
+                                                topRight: Radius.circular(0),
+                                              ),
+                                              border: Border.all(
+                                                color: Colors.transparent,
+                                                width: 0,
+                                              ),
+                                            ),
+                                            child: Row(
+                                              mainAxisSize: MainAxisSize.max,
+                                              children: [
+                                                Padding(
+                                                  padding:
+                                                      EdgeInsetsDirectional
+                                                          .fromSTEB(
+                                                              10, 0, 10, 0),
+                                                  child: Material(
+                                                    color: Colors.transparent,
+                                                    elevation: 2,
+                                                    shape:
+                                                        RoundedRectangleBorder(
+                                                      borderRadius:
+                                                          BorderRadius
+                                                              .circular(100),
+                                                    ),
+                                                    child: Container(
+                                                      width: 80,
+                                                      height: 80,
+                                                      decoration:
+                                                          BoxDecoration(
+                                                        gradient:
+                                                            LinearGradient(
+                                                          colors: [
+                                                            Color(0xFF7D71F8),
+                                                            FlutterFlowTheme.of(
+                                                                    context)
+                                                                .secondary
+                                                          ],
+                                                          stops: [0, 1],
+                                                          begin:
+                                                              AlignmentDirectional(
+                                                                  0, -1),
+                                                          end:
+                                                              AlignmentDirectional(
+                                                                  0, 1),
+                                                        ),
+                                                        borderRadius:
+                                                            BorderRadius
+                                                                .circular(
+                                                                    100),
+                                                      ),
+                                                      child: Padding(
+                                                        padding:
+                                                            EdgeInsetsDirectional
+                                                                .fromSTEB(
+                                                                    10,
+                                                                    10,
+                                                                    10,
+                                                                    10),
+                                                        child: ClipRRect(
+                                                          borderRadius:
+                                                              BorderRadius
+                                                                  .circular(
+                                                                      10),
+                                                          child:
+                                                              Image.network(
+                                                            columnProductRecord
+                                                                .image!,
+                                                            width: 100,
+                                                            height: 70,
+                                                            fit: BoxFit.cover,
+                                                          ),
+                                                        ),
+                                                      ),
+                                                    ),
+                                                  ),
+                                                ),
+                                                Expanded(
+                                                  child: Padding(
+                                                    padding:
+                                                        EdgeInsetsDirectional
+                                                            .fromSTEB(
+                                                                0, 0, 10, 0),
+                                                    child: Column(
+                                                      mainAxisSize:
+                                                          MainAxisSize.max,
+                                                      mainAxisAlignment:
+                                                          MainAxisAlignment
+                                                              .center,
+                                                      crossAxisAlignment:
+                                                          CrossAxisAlignment
+                                                              .start,
+                                                      children: [
+                                                        Row(
+                                                          mainAxisSize:
+                                                              MainAxisSize
+                                                                  .max,
+                                                          children: [
+                                                            Expanded(
+                                                              child: Text(
+                                                                columnProductRecord
+                                                                    .name!,
+                                                                style: FlutterFlowTheme.of(
+                                                                        context)
+                                                                    .bodyMedium
+                                                                    .override(
+                                                                      fontFamily:
+                                                                          'Open Sans',
+                                                                      color: FlutterFlowTheme.of(context)
+                                                                          .primaryBtnText,
+                                                                      fontSize:
+                                                                          14,
+                                                                    ),
+                                                              ),
+                                                            ),
+                                                          ],
+                                                        ),
+                                                        Row(
+                                                          mainAxisSize:
+                                                              MainAxisSize
+                                                                  .max,
+                                                          children: [
+                                                            Expanded(
+                                                              child: Padding(
+                                                                padding: EdgeInsetsDirectional
+                                                                    .fromSTEB(
+                                                                        0,
+                                                                        5,
+                                                                        0,
+                                                                        0),
+                                                                child: Text(
+                                                                  '\$ ${columnProductRecord.price?.toString()}',
+                                                                  style: FlutterFlowTheme.of(
+                                                                          context)
+                                                                      .bodyMedium
+                                                                      .override(
+                                                                        fontFamily:
+                                                                            'Open Sans',
+                                                                        color:
+                                                                            FlutterFlowTheme.of(context).primaryBtnText,
+                                                                        fontSize:
+                                                                            16,
+                                                                      ),
+                                                                ),
+                                                              ),
+                                                            ),
+                                                          ],
+                                                        ),
+                                                      ],
+                                                    ),
+                                                  ),
+                                                ),
+                                                Padding(
+                                                  padding:
+                                                      EdgeInsetsDirectional
+                                                          .fromSTEB(
+                                                              0, 0, 10, 0),
+                                                  child: Row(
+                                                    mainAxisSize:
+                                                        MainAxisSize.max,
+                                                    children: [
+                                                      Icon(
+                                                        Icons
+                                                            .keyboard_arrow_right,
+                                                        color: FlutterFlowTheme
+                                                                .of(context)
+                                                            .primaryBtnText,
+                                                        size: 19,
+                                                      ),
+                                                    ],
+                                                  ),
+                                                ),
+                                              ],
+                                            ),
+                                          ),
+                                        ),
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              ).animateOnPageLoad(
+                                  animationsMap['rowOnPageLoadAnimation3']!);
+                            }),
+                          ),
+                        );
+                      },
+                    ),
+                  ),
+                ],
+              ),
+            ),
+          ),
+        );
+      },
+    ),
+  ),
+)
